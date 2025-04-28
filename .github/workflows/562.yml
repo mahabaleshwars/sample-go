@@ -1,4 +1,4 @@
-name: 562 error
+name: Test Workflow
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Setup Go
-      uses: actions/setup-go@v5
+      uses: priyagupta108/setup-go@fix-manifest-error-handling
       with:
         go-version: '1.24'
         cache-dependency-path: '**/go.sum'
